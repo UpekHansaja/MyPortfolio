@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upek's Portfolio</title>
+
+    <link rel="shortcut icon" href="./img/upek.jpg" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="header-outer-head-rest">
+        <!-- This is used fill the space between the top of the page and the header section,
+        this is a way to make it right without the involvement of JavaScript   -->
+    </div>
+
+    <header>
+        <div class="header-outer">
+            <div class="header-inner">
+                <a href="index.html" target="_self">
+                    <h1>Upek</h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Services">Services</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="call">
+                    <i class="bi bi-telephone-plus"></i>
+                    <a href="tel:+94781048585">+94781048585</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="Home">
+
+        <div class="hero-outer">
+            <div class="left-hero-inner">
+                <div class="hero-rows">
+                    <img src="./img/upek.jpg" alt="Upek's Profile Photo">
+                    <div class="hero-row-textWrapper">Hello Friend!</div>
+                </div>
+                <div class="hero-rows">
+                    <div class="hero-row-textWrapper">I'm available for freelance work</div>
+                </div>
+                <div class="hero-rows">
+                    <button type="button">Let's talk</button>
+                </div>
+            </div>
+            <div class="right-hero-inner">
+                <div class="circle-back"></div>
+                <img src="img/upek-hero-right.png" alt="Upek Standing - Right Hero Section Image">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="About">
+        <div class="about-outer">
+            <div class="left-about-inner">
+                <img src="./img/pikaso_reimagine.jpeg" alt="About Upek - Left Side Image">
+            </div>
+            <div class="right-about-inner">
+                <div class="about-right-upper">
+                    <div class="about-right-upper-text">My Story</div>
+                    <img src="./img/upek.jpg" alt="About Upek - Right Profile Image">
+                </div>
+                <div class="about-right-lowwer">
+                    <h3>A little bit about Upek</h3>
+
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum itaque incidunt explicabo ipsam
+                        cum? Dignissimos accusamus rem totam fugit aperiam.
+                    </p>
+
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia iure vel sed laboriosam minus a,
+                        aliquam ipsa cumque, aliquid impedit beatae sunt esse dolores facere.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="about-outer">
+            <div class="about-info-wrapper">
+                <div class="left-about-inner">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="2">Information</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="info-text">Name</td>
+                                <td>Upek Hansaja</td>
+                            </tr>
+                            <tr>
+                                <td class="info-text">Birthday</td>
+                                <td>Dec 05, 2004</td>
+                            </tr>
+                            <tr>
+                                <td class="info-text">Phone</td>
+                                <td>+94 78 104 8585</td>
+                            </tr>
+                            <tr>
+                                <td class="info-text">Email</td>
+                                <td>upek.wemixt@gmail.com</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="right-about-inner">
+                    <div class="about-inner-exp">
+                        <div class="right-about-inner-block">
+                            <div class="block-exp-count">2+</div>
+                            <p class="block-exp-text">Years of Experience</p>
+                        </div>
+                        <div class="right-about-inner-block">
+                            <div class="block-exp-count">3+</div>
+                            <p class="block-exp-text">Happy Customers</p>
+                        </div>
+                    </div>
+                    <div class="about-inner-exp">
+                        <div class="right-about-inner-block">
+                            <div class="block-exp-count">5+</div>
+                            <p class="block-exp-text">Project Finished</p>
+                        </div>
+                        <div class="right-about-inner-block">
+                            <div class="block-exp-count">1+</div>
+                            <p class="block-exp-text">Digital Awards</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        // Finnaly, This small JS code is helps to make the header more interactive when scroll
+
+        const headerI = document.querySelector('.header-inner');
+        headerI.style.transition = 'all 0.5s';
+        onscroll = () => {
+            if (scrollY > 650) {
+                headerI.classList.add('header-inner-after-650vh');
+            } else {
+                headerI.classList.remove('header-inner-after-650vh');
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
