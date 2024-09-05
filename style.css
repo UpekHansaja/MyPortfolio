@@ -14,6 +14,10 @@
   scroll-behavior: smooth !important;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 /* Header Section */
 header {
   top: 0 !important;
@@ -324,10 +328,18 @@ header {
   padding: 15vh 0;
 }
 
+
 .about-outer:nth-child(2) {
+  border: 1px solid var(--light-border-grey-color);
   width: 100%;
   background-color: #f6f6f6;
-  border: 1px solid var(--light-border-grey-color);
+}
+
+.about-outer:nth-child(3) {
+  /* width: 100%; */
+  /* border: 2px solid #00ab7d; */
+  padding: 0;
+  flex-direction: column;
 }
 
 .left-about-inner {
@@ -444,7 +456,7 @@ header {
 
 .about-right-upper {
   width: 30vw;
-  height: 20vh;
+  /* height: 20vh; */
   background-color: var(--main-green-color);
   color: var(--main-light-color);
   font-size: 3rem;
@@ -461,8 +473,8 @@ header {
 }
 
 .about-right-upper img {
-  width: 15vh;
-  height: 15vh;
+  width: 20vh;
+  height: 20vh;
   object-fit: cover;
   border-radius: 50%;
   border: 3px solid var(--main-light-color);
@@ -512,30 +524,136 @@ header {
   flex-direction: column;
 }
 
-.about-inner-exp:nth-child(1) > .right-about-inner-block:nth-child(1){
+.about-inner-exp:nth-child(1) > .right-about-inner-block:nth-child(1) {
   border-right: 1px solid var(--light-border-grey-color);
 }
 
-.about-inner-exp:nth-child(1) > .right-about-inner-block:nth-child(2){
+.about-inner-exp:nth-child(1) > .right-about-inner-block:nth-child(2) {
   border-bottom: 1px solid var(--light-border-grey-color);
 }
 
-.about-inner-exp:nth-child(2) > .right-about-inner-block:nth-child(1){
+.about-inner-exp:nth-child(2) > .right-about-inner-block:nth-child(1) {
   border-right: 1px solid var(--light-border-grey-color);
 }
 
-.about-inner-exp:nth-child(1) > .right-about-inner-block:nth-child(1){
+.about-inner-exp:nth-child(1) > .right-about-inner-block:nth-child(1) {
   border-bottom: 1px solid var(--light-border-grey-color);
 }
 
-.block-exp-count{
+.block-exp-count {
   font-size: 5rem;
   font-weight: 700;
 }
 
-.block-exp-text{
+.block-exp-text {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--main-green-color);
 }
+
+.workplace-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--main-dark-color);
+  margin-bottom: 20px;
+  /* border: 3px solid var(--main-green-color); */
+  display: flex;
+  flex: 1;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.workplace-images {
+  /* border: 3px solid var(--main-green-color); */
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  flex: 1.3;
+}
+
+.workplace-images img {
+  width: 200px;
+  height: 100px;
+  object-fit: contain;
+  /* border: 3px solid var(--main-green-color); */
+  transition: 0.3s;
+  mix-blend-mode: multiply;
+}
+
+.workplace-images img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
 /* About Section */
+
+/* Services Section */
+
+#Services {
+  background-color: var(--main-light-color);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 1px solid var(--light-border-grey-color);
+  background-color: #f6f6f6;
+}
+
+.service-outer{
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15vh 0;
+  border: 2px solid var(--main-dark-color);
+  flex-direction: column;
+}
+
+.service-inner-upper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: 2px solid var(--main-green-color);
+}
+
+
+.service-inup-head {
+  width: 100%;
+  /* height: 20vh; */
+  background-color: var(--main-green-color);
+  color: var(--main-light-color);
+  font-size: 3rem;
+  font-weight: 700;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 30px;
+}
+
+.service-inup-head img {
+  width: 20vh;
+  height: 20vh;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--main-light-color);
+}
+
+.service-inner-lower{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 99%;
+  padding: 30px 0;
+  border: 2px solid var(--main-blue-color);
+}
+
+.service-inner-lower-left{
+  
+}
+/* Services Section */
